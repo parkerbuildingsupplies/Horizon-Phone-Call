@@ -47,7 +47,7 @@ public class Call {
     
     public Date getDate() throws ParseException{
         this.date.replace("/", "-");
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
         Date date = dateFormat.parse(this.date);
         
         return date;
